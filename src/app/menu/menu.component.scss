@@ -1,0 +1,41 @@
+.menuComponent{
+	display: flex;
+	color: #217aad;
+	justify-content: space-between;
+	padding: 26px 27px;
+	font-family: "montserrat";
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	z-index: 9;
+	height: 73px;
+	a{
+	    font-size: 14px;
+	    color: #333;
+	    text-decoration: none;
+	    padding: 0 6px;
+	    &.active{
+		    border-bottom: 2px solid #349ecc;
+		    padding-bottom: 3px;
+	    }
+	}
+	.menuMobile{
+		display: none;
+	}
+	.navigationElement{
+	    margin-top: 7px;
+	}
+	button{
+		margin-left: 6px;
+	}
+}
+@media screen and (max-width: 650px){
+	.menuComponent{
+		.menuDesktop{
+			display: none;
+		}
+		.menuMobile{
+			display: block;
+		}
+	}
+}

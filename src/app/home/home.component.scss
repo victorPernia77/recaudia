@@ -1,0 +1,180 @@
+// Here
+.loginView{
+  //background-image: url('https://images.pexels.com/photos/116024/pexels-photo-116024.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-color: #217aad;  
+  min-height: 100vh;
+  background-size: cover;
+  .loginBox{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 80%;
+    .leftColumn{
+      position: relative;
+      min-height: 57vh;
+      background: #fff;
+      border-top-left-radius: 25px;
+      width: 59%;
+      border-bottom-left-radius: 25px;
+      vertical-align: middle;
+      color: #333;
+    }
+    .rightColumn{
+      background: #000;
+      min-height: 64vh;
+      border-radius: 13px;
+      width: 41%;
+      vertical-align: middle;
+      margin-left: -11px;
+      z-index: 2;
+      position: relative;
+      padding: 25px;
+      p{
+        &:nth-child(1){
+          font-size: 26px;
+          padding: 15px;
+          margin-top: 12px;
+          span{
+            text-transform: uppercase;
+            font-size: 42px;
+            letter-spacing: 3px;
+          }
+        }
+        &:nth-child(2){
+          font-size: 11px;
+          line-height: 14px;
+          letter-spacing: 0px;
+          max-width: 90%;
+          margin: 0 auto;
+        }
+      }
+      .spaceMan{
+        text-align: center;
+        margin-top: 28px;
+      }
+    }
+    .loginBoxTitle{
+      margin-left: 30px;
+      margin-top: 16px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .loginBoxInputs{
+      text-align: center;
+      width: 70%;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      .loginBoxSingIn{
+        display: flex;
+        justify-content: space-between;
+        div{
+          width: 49%;
+          &:first-of-type{
+            justify-content: space-between;
+            display: flex;
+            width: 40%;
+          }
+        }
+        button{
+          background: #299cd3;
+          color: #fff;
+          padding: 9px 8px;
+          width: 90%;
+          border-radius: 43px;
+          margin-top: -4px;
+
+        }
+      }
+      input{
+        border-bottom: 1px solid #737373;
+        width: 100%;
+        margin-bottom: 23px;
+        padding: 4px 1px;
+      }
+    }
+    .forgetPassword{
+      position: absolute;
+      bottom: 34px;
+      text-align: center;
+      width: 100%;
+      font-size: 13px;
+    }
+  }
+  .footerLoginView{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: #000;
+    padding: 10px; 
+    .alRight{
+      padding-left: 250px;
+      i{
+        margin-left: 2%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px){
+  .loginView{
+    .loginBox{
+      .leftColumn{
+        min-height: 30vh;
+      } 
+      .rightColumn{
+        min-height: 39vh;
+      }
+    }
+    .footerLoginView{
+      .alRight{
+        padding-left: 10%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  .loginView{
+    .loginBox{
+      .leftColumn{
+        width: 98%;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-top: -185px; 
+      }
+      .rightColumn{
+        display: none;
+      }
+    }
+    .footerLoginView{
+      .alRight{
+        padding-left: 0;
+      }
+    } 
+  }
+}
+@media screen and (max-width: 390px){
+  .loginView{
+    .loginBox{
+      .forgetPassword{
+        top: 170px;
+      }
+    } 
+    .footerLoginView{
+      font-size: 12px;
+    }  
+  }
+}
